@@ -250,5 +250,5 @@ talkedRecently.add(message.author.id);
     
         }
 module.exports.help = {
-  name:"معلومات"
+  name:"about"
 }

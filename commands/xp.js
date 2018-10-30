@@ -27,5 +27,5 @@ module.exports.run = async (bot, message, args, sql) => {
 }
 
 module.exports.help = {
-  name: "Lvl"
+  name: "lvl"
 }

@@ -66,5 +66,5 @@ let LUser;
     
   }
 module.exports.help = {
-name:"Like"
+name:"like"
 }
