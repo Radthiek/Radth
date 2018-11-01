@@ -12,7 +12,7 @@ module.exports.run = async (bot, message, args, sql) => {
     let arrow;
     let timeoute = new Discord.RichEmbed()
     .setColor("#C2C2C2")
-    .setTitle("إنتظر 20 ثانية");
+    .setTitle("White 2Min");
     if (talkedRecently.has(message.author.id)) {
         
         message.channel.send(timeoute).then(msg => {msg.delete(5000)});

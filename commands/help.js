@@ -37,6 +37,7 @@ module.exports.run = async (bot, message, args) => {
     .addField(".words", '● [اكتب الي بخاطرك]')
   	.addField(".dream", '● [اكتب طموحك]')
     .addField(".model", '● [اكتب قدوتك]')
+	.addField(".invite", '● [لدعوة البوت الى سيرفرك]')
     .setFooter(`@${message.author.username} :المرسل`, message.author.displayAvatarURL);
     message.channel.send(helpembed1);
     }

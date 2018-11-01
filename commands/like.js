@@ -7,7 +7,7 @@ module.exports.run = async (bot, message, args, sql) => {
 let LUser;
   message.delete(5000);
   let pUser = message.mentions.users.first();
-  if(message.mentions.users.size < 1) return message.channel.send("`#لايك @user#123`").then(msg => {msg.delete(5000)});
+  if(message.mentions.users.size < 1) return message.channel.send("`.like @user#123`").then(msg => {msg.delete(5000)});
   let rows = sql.prepare(`SELECT * FROM profile WHERE UserID = '${pUser.id}'`).get()
 
     if(!rows) return message.reply("`غير مسجل بعد`").then(msg => {msg.delete(5000)});

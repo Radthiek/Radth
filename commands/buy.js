@@ -20,7 +20,7 @@ module.exports.run = async (bot, message, args, sql) => {
         sql.prepare(sqlstr).run()
         sqlstr = `UPDATE profile SET bg = ${parseInt(args[0])} WHERE UserID = '${message.author.id}'`;
         sql.prepare(sqlstr).run()
-        return message.reply("تم الشراء بنجاح وخصم 100 ريال من رصيك").then(msg => {msg.delete(5000)});
+        return message.reply("تمت عملية الشراء بانجاح").then(msg => {msg.delete(5000)});
 
 
     
