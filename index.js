@@ -156,4 +156,4 @@ let about = sql.prepare(`SELECT * FROM about WHERE UserID = '${message.author.id
 
 });
 
-bot.login(process.env.BOT_TOKEN);
+bot.login('NTA3NTAwOTc2MDU2NTY1NzYx.DtSM9Q.LHvPbn9WD7qkmQ5drNka7m237qs');
