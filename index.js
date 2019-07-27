@@ -156,4 +156,4 @@ let about = sql.prepare(`SELECT * FROM about WHERE UserID = '${message.author.id
 
 });
 
-client.login(process.env.TOKEN);
+client.login(process.env.token);
