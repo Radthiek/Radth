@@ -155,6 +155,7 @@ let about = sql.prepare(`SELECT * FROM about WHERE UserID = '${message.author.id
 
 
 });
+var prefix = ".";
 bot.on('message', message => {
 	if(!message.channel.guild) return;
 if(message.content.startsWith(prefix + 'bc')) {
