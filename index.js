@@ -43,7 +43,7 @@ fs.readdir("./others/", (err, files) => {
 
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online on ${bot.guilds.size} servers!`);
-  bot.user.setActivity("Mubox.cf Network - " + botconfig.prefix + "مساعدة", {type: "WATCHING"});
+  bot.user.setActivity("Rogar.gq Network - " + botconfig.prefix + "مساعدة", {type: "WATCHING"});
   const profile = sql.prepare("SELECT count(*) FROM sqlite_master WHERE type='table' AND name = 'profile';").get();
   if (!profile['count(*)']) {
     // If the table isn't there, create it and setup the database correctly.
@@ -156,4 +156,4 @@ let about = sql.prepare(`SELECT * FROM about WHERE UserID = '${message.author.id
 
 });
 
-bot.login('NTA3NTAwOTc2MDU2NTY1NzYx.DtSM9Q.LHvPbn9WD7qkmQ5drNka7m237qs');
+client.login(process.env.TOKEN);
